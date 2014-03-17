@@ -90,7 +90,7 @@ char *decrypt(char *ciphertext, int rot){
 	return ciphertext;
 }
 
-void crack(char *ciphertext){
+void brute_crack(char *ciphertext){
 	int i;
 	for(i = 0; i<SIZE_ALPHABET; i++){
 		printf("Guess: %s Rot:%d\n", decrypt(ciphertext, -1*i), -1*i);
@@ -102,6 +102,6 @@ int main(int argc, char *argv[]){
 
 	char string[] = "apples";
 	char *encrypted = encrypt(string);
-	crack(encrypted);
+	brute_crack(encrypted);
 	return 0;
 }

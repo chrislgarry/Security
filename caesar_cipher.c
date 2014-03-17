@@ -2,7 +2,7 @@
 //
 // Description: A Caesar Cipher
 // algorithm to encrypt plaintext
-// messages over the ASCII alphabet.
+// messages over the a-z alphabet.
 //
 */
 

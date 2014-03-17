@@ -51,14 +51,14 @@ int str_check(char *string){
 	int length = strlen(string); 
 
 	if(length > 0){
-
+		
+		is_valid_str = TRUE; 
 		for(i =0; i<length; i++){
 
 			if(alphabet_index(string[i])==INVALID){
 				is_valid_str = FALSE;
 				break;
 			}
-			is_valid_str = TRUE; 
 		}
 	}
 	return is_valid_str;

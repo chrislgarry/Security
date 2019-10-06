@@ -55,7 +55,7 @@ void rot_plaintext(char *plaintext, int rot){
 
 	int x;
 	for(x=0; x<strlen(plaintext); x++){
-		plaintext[x] = alphabet[(plaintext[x]-'a'+rot+SIZE_ALPHABET) % SIZE_ALPHABET];
+		plaintext[x] = alphabet[(plaintext[x]-'a'+rot) % SIZE_ALPHABET];
 	}
 }
 
